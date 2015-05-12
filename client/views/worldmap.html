@@ -1,0 +1,49 @@
+<template name="worldmap">
+
+	<style> /* set the CSS */
+		body { font: 12px Arial;}
+		.axis line {
+		    fill: none;
+		    stroke: grey;
+		    stroke-width: 1;
+		    shape-rendering: crispEdges;
+		}
+
+		.key path {
+		  display: none;
+		}
+
+		.key line {
+		  stroke: #000;
+		  shape-rendering: crispEdges;
+		}
+
+		.legend-title {
+		    font-weight: bold;
+		}
+
+		.legend-box {
+		    fill: white;
+		    font-size: 10px;
+		}
+	</style>
+
+	<b>{{countryCount}}</b>
+	<b>{{songName}}</b>
+		<br>
+	<input type="text" id="xxAmount" readonly style="border:0;">
+	<input type="text" id="date" readonly style="border:0;">
+
+	<div id="container"></div>
+	<div id="graphs"></div>
+
+	<input id="title" type="text" placeholder="title">
+	<button class="search">Nummer zoeken</button>
+
+	<p>
+		<label for="amount">Gekozen dag:</label>
+		<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+	</p>
+	<div id='slider'></div>
+
+</template>

@@ -1,0 +1,20 @@
+/* CSS declarations go here */
+.country:hover{
+  stroke: #fff;
+  stroke-width: .7px;
+}
+#container {
+  border:2px solid #d0d0d0;
+  border-radius: 5px;
+  height:1000px;
+  width: 1000px;
+  z-index: 0;
+}
+
+#graphs {
+	position: absolute;
+	width: 700px;
+	height: 525px;
+	top: 0px;
+	left: 1050px;
+}
